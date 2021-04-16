@@ -1,0 +1,24 @@
+// Header + nav
+header{
+    transition: 0.5s;
+    top: -100px;
+    nav{
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover{
+                color: black
+            }
+            
+        }
+    }
+    
+}
+
+@media ( max-width:  540px ){
+    nav{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/app.css">
+    <title>Emporium</title>
+</head>
+<body>
+    <header>
+        <img src="public/img/logo.png" class="mt-5 mx-auto d-block"></img>
+        
+        <nav class=" row justify-content-around m-5 mx-5">
+            
+            <div class="row d-none d-lg-flex col-lg-6 col-12 container mt-1 text-center">
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Home</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Product</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Blog</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Elements</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">About</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Contact</a>
+            </div>
+
+            <div class="dropdown d-lg-none">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+                </a>
+
+            <div class="dropdown-menu  " aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">HOME</a>
+                <a class="dropdown-item" href="#">PRODUCT</a>
+                <a class="dropdown-item" href="#">BLOG</a>
+                <a class="dropdown-item" href="#">ELEMENTS</a>
+                <a class="dropdown-item" href="#">ABOUT</a>
+                <a class="dropdown-item" href="#">CONTACT</a>
+                </div>
+            </div>
+
+            <div class=" col-lg-1 col-12 text-center">
+                <button class="p-2 bg-white mr-1 border-dark"></button>
+                <button class="p-2 bg-dark border-white"></button>
+            </div>
+            <button class="col-lg-1 bg-dark text-white text-center mw-100 rounded mr-2">connexion</button>
+        </nav>
+    </header>
+
+    <section id="myModal" class="modal">
+
+        <!-- Modal contenu -->
+        <div class="modal-contenu bg-red ">
+
+            <span class="fermer">&times;</span>
+
+            <div class="row justify-content-center container">
+                <div class="col-lg-3 col-12">
+                    <button class="text-center">Se connecter</button>
+                </div>
+                <div class="col-lg-3 col-12 ">
+                    <button class="text-center">S'inscrire</button>
+                </div>
+            </div>
+            <hr class="bg-dark w-100">
+            <div class="formulaire container d-none">
+                <p>Mail</p>
+                <input type="mail" placeholder="Entrez votre mail">
+                <p class="mt-3">Password</p>
+                <input type="password">
+                <br>
+                <button class="mt-4">Se connecter</button>
+            </div>
+            <div class="formulaire container d-none">
+                <p class="mt-3">Nom</p>
+                <input type="text" placeholder="Nom">
+                <p class="mt-3">Prénom</p>
+                <input type="text" placeholder="prénom">
+                <p class="mt-3">Age</p>
+                <input type="text" placeholder="age">
+                <p class="mt-3">Mail</p>
+                <input type="mail" placeholder="Entrez votre mail">
+                <p class="mt-3">Password</p>
+                <input type="password" placeholder="Creer votre mot de passe">
+                <br>
+                <button class="mt-4">S'inscrire</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section avec le t-shirt en bg -->
+
+    <section id='premier-Section' class="p-5 bg-gris container-fluid">
+        <div class="row  mt-5 p-5 align-items-center d-flex justify-content-center">
+            <div class="col-2"></div>
+            <div class=" col-12 col-lg-4">
+                <h2 class="mb-3 text-red">
+                    Shop at
+                </h2>
+                <h1 class="text-dark emporium mw-100">emporium.</h1>
+                <p class="text-dark">A wonderful serenity has taken possession of my entire soul, like these sweet
+                    mornings
+                    of spring which I
+                    enjoy with my.
+                </p>
+                <button class="text-white px-4 py-3 bg-red rounded-pill">Sale items</button>
+            </div>
+            <div class="image  col-12 col-lg-3 ">
+                <img class="mw-100 " src="./public/img/slider-1.jpg" alt="">
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </section>
+
+    <!-- section service -->
+    <section id="services" class="my-5">
+
+        <div class="row justify-content-center mw-100 ">
+
+            <div class="col-lg-3 col-md-6 col-12 p-5 ml-4 ">
+                <div class="text-center">
+                    <a href="#"> Living Room</a>
+                    <hr class="w-25">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 p-5 ml-4 ">
+                <div class="text-center">
+                    <a href="#">Sale Items</a>
+                    <hr class="w-25">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 p-5 ml-4">
+                <div class="text-center">
+                    <a href="#">Clothes</a>
+                    <hr class="w-25">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- recent produit -->
+    <section id="recent" class="container my-5">
+        <h4>Recent Products</h4>
+        <div class="row container">
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Luxury Sofa</p>
+                    <span class="prix">$600.00</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-gloves.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row my-3 align-items-center">
+                    <span class="offset-1  col-lg-2 sale ">SALE!</span>
+                    <div class="offset-1 col-lg-5">
+                        <p>Leather Gloves</p>
+                        <div>
+                            <span class="barre">$34.00</span>
+                            <span class="prix text-red">$27.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-cups.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col ">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Colorful Bowl</p>
+                    <span class="prix">$18.00</span>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-bag.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row my-3 align-items-center">
+                    <span class="offset-1 col-lg-2 sale ">SALE!</span>
+                    <div class="offset-1 col-lg-5">
+                        <p>Women Bag</p>
+                        <div class="d-flex">
+                            <span class="barre">$420.00</span>
+                            <span class="prix">$350.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-tshitr.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Minimal T-Shirt</p>
+                    <span class="prix">$15.00</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-plates.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Plates Set</p>
+                    <span class="prix">$18.00</span>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Modern Sofa</p>
+                    <span class="prix">$900.00</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-bed.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Bed Linen</p>
+                    <span class="prix">$79.00</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/img/products_mini/product-shoes.jpg" alt="">
+                    <div class="disparait row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Minimal Shoes</p>
+                    <span class="prix">$60.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- section discover -->
+    <section id="discover">
+
+        <div class="text-center">
+            <h1 class="text-white ">Discover Thousands Of Great Products</h1>
+            <span class="text-white pt-2">LEARN MORE</span>
+        </div>
+    </section>
+
+    <!-- section carroussel -->
+    <section id="carousel" class="text-center">
+        <h4 class="text-center my-5">Hot Fashion Products</h4>
+        <div class="carousel  container" id="myCarousel">
+            <div id="carousel-contenu" class="flex-nowrap row">
+                <div class="col-lg-3 col-6 item">
+                    <div class="item-image">
+                        <img src="public/img/products/product-tshitr-white-700x500.jpg" alt="">
+                    
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Minimal T-Shirt</p>
+                        <span class="prix">$23.00</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <div class="item-image">
+                        <img src="public/img/products/product-bag-2-700x500.jpg" alt="">
+                    </div>
+                    <div class="row my-3 align-items-center item-desc">
+                        <span class="offset-1 solde col-lg-2">SALE!</span>
+                        <div class="offset-1 col-lg-5">
+                            <p>Red Bag</p>
+                            <div>
+                                <span class="barre">$600.00</span>
+                                <span class="prix">$450.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <div class=" item-image">
+                        <img src="public/img/products/product-jacket-700x500.jpg" alt="">
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Sporty Jacket</p>
+                        <span class="prix">$40.00</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <div class="item-image">
+                        <img src="public/img/products/product-shoes-700x500.jpg" alt="">
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Minimal Shoes</p>
+                        <span class="prix">$60.00</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <div class="item-image">
+                        <img src="public/img/products/product-tshitr-700x500.jpg" alt="">
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Minimal T-Shirt</p>
+                        <span class="prix">$15.00</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <div class="item-image">
+                        <img src="public/img/products/product-bag-700x500.jpg" alt="">
+                    </div>
+                    <div class="row my-3 align-items-center item-desc">
+                        <span class="offset-1 solde col-lg-2">SALE!</span>
+                        <div class="offset-1 col-lg-5">
+                            <p>Women Bag</p>
+                            <div>
+                                <span class="barre">$420.00</span>
+                                <span class="prix">$350.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 item">
+                    <div class="item-image">
+                        <img src="public/img/products_mini/product-gloves.jpg" alt="">
+                    </div>
+                    <div class="row my-3 align-items-center item-desc">
+                        <span class="offset-1 solde col-lg-2">SALE!</span>
+                        <div class="offset-1 col-lg-5">
+                            <p>Leather Gloves</p>
+                            <div>
+                                <span class="barre">$34.00</span>
+                                <span class="prix">$27.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="button-carousel" class="row justify-content-center mx-auto">
+            <span class=" button-carousel p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+            <span class=" button-carousel p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+            <span class="button-carousel p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+            <span class="button-carousel p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+        </div>
+
+    </section>
+
+    <!-- section review -->
+    <section id="review" class="my-5">
+        <div class="row text-center justify-content-around mw-100">
+            <div class="col-lg-4 col-12 p-5 bg-gris gris">
+                <i class="far fa-check-circle fa-2x"></i>
+                <h3>Trsuted By 10,000+ Customers</h3>
+                <p class="p-4 text-dark">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia,
+                    there live the
+                    blind texts.</p>
+                <button class="noir px-3 py-2 rounded">Learn more</button>
+            </div>
+            <div class="col-lg-4 col-12 p-5 rouge">
+                <i class="fas fa-paper-plane fa-2x"></i>
+                <h3>Very Fast Shipping</h3>
+                <p class="p-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the
+                    blind texts.
+                </p>
+                <button class="px-3 py-2 rounded">Learn more</button>
+            </div>
+            <div class="col-lg-4 col-12 p-5 bg-gris gris">
+                <i class="far fa-check-circle fa-2x"></i>
+                <h3>Trsuted By 10,000+ Customers</h3>
+                <p class="p-4 text-dark">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia,
+                    there live the
+                    blind texts.</p>
+                <button class="noir px-3 py-2 rounded">Learn more</button>
+            </div>
+        </div>
+    </section>
+
+<!-- section footer -->
+<footer>
+    
+    <div class="row justify-content-center m-0 p-0">
+        <div class="col-lg-4 col-12 us">
+            <span>ABOUT US</span>
+            <p class="pt-5">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                which I
+                enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was
+                created
+                for the bliss of </p>
+        </div>
+
+        <div class="col-lg-4 col-12 post">
+            <span>RECENT POSTS</span>
+            <ul class="pt-5">
+                <li><a href="#"> Hello world!</a></li>
+                <hr>
+                <li><a href="#"> Wonderful serenity has taken</a></li>
+                <hr>
+                <li><a href="#"> In my soul and absorb its power</a></li>
+                <hr>
+                <li><a href="#"> I hear the buzz of the little</a></li>
+                <hr>
+            </ul>
+        </div>
+
+        <div id='tag' class="col-lg-4 col-12">
+            <span>TAG CLOUD</span>
+            <div class="row pt-5 fin ">
+                <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3 col-3"><a>BUSINESS</a></div>
+                <div class="tags px-2 py-2 mb-2 ml-2 col-lg-4"><a>CONFERENCE</a></div>
+                <div class="w-100"></div>
+                <div class="tags px-2 py-2  mb-2 ml-2 col-lg-3 col-3"><a>GADGETS</a></div>
+                <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3 col-3"><a>IDENTITY</a></div>
+                <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3 col-3"><a>LOGO</a></div>
+                <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3 col-3"><a>PHOTO</a></div>
+                <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3 col-3"><a>TIME</a></div>
+                <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3 col-3"><a>TRIPS</a></div>
+                <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3 col-3"><a>WORKS</a></div>
+                <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3 col-3"><a>WORK SPACE</a></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright bg-dark text-center py-5 ">
+        Copyright 2020 RORONOA ZORO, All Right Reserved
+    </div>
+
+</footer>
+
+
+
+
+
+
+    
+    <!-- script jquery -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- script java -->
+    <script type="module" src="public/js/main.js"></script>
+    <!-- script bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
